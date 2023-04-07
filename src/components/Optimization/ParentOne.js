@@ -3,7 +3,12 @@
 import React , { useState } from 'react'
 // import ChildOne from './ChildOne';
 
+// function ParentOne(props) {
+
 function ParentOne({ children }) {
+
+  // console.log(props)
+
     const [count, setCount] = useState(0);
 
     console.log(`ParentOne Render`)

@@ -7,13 +7,27 @@ import ArrayUseState from './components/Immutable_State/ArrayUseState';
 import Parent from './components/Parent_Child/Parent';
 import ChildOne from './components/Optimization/ChildOne';
 import ParentOne from './components/Optimization/ParentOne';
+import GrandParent from './components/Optimization/GrandParent';
+import ParentTwo from './components/Optimization/ParentTwo';
+import ParentThree from './components/Incorrect_Optimizations/ParentThree';
+import ParentFour from './components/Incorrect_Optimizations/ParentFour';
+import { ContextParent } from './components/Context/ContextParent';
+import { ChildA } from './components/Context/ContextChildren';
+
 
 function App() {
   return (
     <div className="App">
-      <ParentOne>
+      <ContextParent>
+        <ChildA />
+      </ContextParent>
+      {/* <ParentFour /> */}
+      {/* <ParentThree/> */}
+      {/* <ParentTwo /> */}
+      {/* <GrandParent /> */}
+      {/* <ParentOne value={'tester'}>
         <ChildOne />
-      </ParentOne>
+      </ParentOne> */}
       {/* <Parent /> */}
       {/* <ArrayUseState /> */}
       {/* <ObjectUseState /> */}
